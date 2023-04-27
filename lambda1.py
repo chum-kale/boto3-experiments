@@ -30,3 +30,8 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': 'Metadata stored in DynamoDB'
     }
+
+
+#context parameter is used to access aws sdk and s3 clients, context 
+#and event are directly provided by aws.
+#event is list f records containing metadata of files in s3.
